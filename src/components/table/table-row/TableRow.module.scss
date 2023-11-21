@@ -1,0 +1,13 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+
+  width: 100%;
+
+  grid-template-columns:
+    minmax(13%, 1fr) minmax(15%, 0.8fr) minmax(30%, 4fr) minmax(15%, 1fr)
+    minmax(12%, 1.5fr) minmax(10%, 1fr);
+  &:nth-child(odd) {
+    background: #f4f4f4;
+  }
+}

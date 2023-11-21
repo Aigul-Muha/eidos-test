@@ -1,0 +1,130 @@
+@mixin link {
+  color: #2f3144;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.root {
+  width: 274px;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 12px;
+  position: relative;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collapsed {
+  width: 10px;
+  transition: width 0.3s;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 12px;
+  position: relative;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion {
+  position: absolute;
+  cursor: pointer;
+  right: -25px;
+  top: 15px;
+}
+
+.collapsedIcon {
+  position: absolute;
+  cursor: pointer;
+  right: -13px;
+  top: 25px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.user {
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+}
+
+.userName {
+  @include link;
+  cursor: pointer;
+}
+
+.userStatus {
+  color: rgba(47, 49, 68, 0.65);
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.logout {
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logoutLink {
+  @include link;
+}
+
+.select {
+  @include link;
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.3723 8.5349C19.7629 8.92542 19.7629 9.55859 19.3723 9.94911L13.3723 15.9491C12.9818 16.3396 12.3486 16.3396 11.9581 15.9491L5.95812 9.94911C5.56759 9.55859 5.56759 8.92542 5.95812 8.5349C6.34864 8.14437 6.9818 8.14437 7.37233 8.5349L12.6652 13.8278L17.9581 8.5349C18.3486 8.14437 18.9818 8.14437 19.3723 8.5349Z' fill='%23999999'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  cursor: pointer;
+  &::-ms-expand {
+    display: none;
+  }
+  &:hover {
+    border-color: #888;
+  }
+}
+
+.version {
+  color: rgba(47, 49, 68, 0.65);
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}

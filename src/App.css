@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+}
+
+.title {
+  color: #2f3144;
+  font-feature-settings: 'liga' off;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+.content {
+  padding: 25px;
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #fff;
+  margin-left: 9px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
