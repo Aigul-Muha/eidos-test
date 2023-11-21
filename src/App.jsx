@@ -15,7 +15,7 @@ function App() {
   const [limit, setLimit] = useState(8);
   const [filter, setFilter] = useState({ sort: '', query: '' });
   const [authOpen, setAuthOpen] = useState(false);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   console.log(setLimit);
 
