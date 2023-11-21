@@ -6,7 +6,7 @@
 
 Приложение откроется в браузере по адресу http://127.0.0.1:5173.
 
-Либо можно посмотреть напрямую по адресу https://eidos-test-umber.vercel.app/.
+Либо можно посмотреть напрямую по адресу https://eidos-test-xi.vercel.app/.
 
 ## Функционал
 
@@ -21,4 +21,5 @@
 - React;
 - axios;
 - SCSS;
-- ESLint, Prettier.
+- ESLint, Prettier;
+- Для сборки используется Vite
